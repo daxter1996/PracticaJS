@@ -17,47 +17,47 @@
 <div class="container">
     <h1>Utilitats</h1>
     <div class="row">
-        <div class="col s12 m6">
+        <div class="col s12">
             <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
                     <span class="card-title">Calcula el teu IMC</span>
                     <p>
-                        <input placeholder="Pes en Kg" id="imc" type="text" class="validate">
-                        <a class="waves-effect waves-light btn blue-grey darken-2">Calcula</a>
+                        <input placeholder="Pes en Kg" id="pes" type="text" class="validate">
+                        <input placeholder="Altura" id="altura" type="text" class="validate">
+                        <a onclick="calculaIMC()" class="waves-effect waves-light btn blue-grey darken-2">Calcula</a>
                     </p>
                 </div>
                 <div class="card-action">
-                    <a href="#">Resultat: </a>
+                    <a id="resultatIMC" href="">Resultat: </a>
                 </div>
             </div>
         </div>
-        <div class="col s12 m6">
+        <div class="col s12">
             <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
                     <span class="card-title">Calcula la teva FCM</span>
                     <p>
-                        <input placeholder="Edat" id="fcm" type="text" class="validate">
-
-                        <a class="waves-effect waves-light btn blue-grey darken-2">Home</a>
-                        <a class="waves-effect waves-light btn blue-grey darken-2">Dona</a>
+                        <input placeholder="Edat" id="edat" type="text" class="validate">
+                        <a onclick="calculaFCM('home')" class="waves-effect waves-light btn blue-grey darken-2">Home</a>
+                        <a onclick="calculaFCM('dona')" class="waves-effect waves-light btn blue-grey darken-2">Dona</a>
                     </p>
                 </div>
                 <div class="card-action">
-                    <a href="#">Resultat: </a>
+                    <a id="resultatFCM" href="">Resultat: </a>
                 </div>
             </div>
         </div>
-        <div class="col s12 m6">
+        <div class="col s12">
             <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
                     <span class="card-title">Calcula la teva categoria</span>
                     <p>
                         <input placeholder="Any de neixament" id="categoria" type="text" class="validate">
-                        <a class="waves-effect waves-light btn blue-grey darken-2">Calcula</a>
+                        <a onclick="calculaCategoria()" class="waves-effect waves-light btn blue-grey darken-2">Calcula</a>
                     </p>
                 </div>
                 <div class="card-action">
-                    <a href="#">Resultat: </a>
+                    <a id="resultatCategoria" href="">Resultat: </a>
                 </div>
             </div>
         </div>
@@ -90,6 +90,7 @@
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/materialize.min.js"></script>
+<script type="text/javascript" src="utilitats.js"></script>
 </body>
 <?php include_once "footer.php"; ?>
 </html>
