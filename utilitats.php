@@ -12,7 +12,7 @@
 <header>
     <?php include_once "header.php"; ?>
 </header>
-<body>
+<body onload="horari1(2,9,17,'horari1');horari2(1,14,22,'horari2')" >
 <br/>
 <div class="container">
     <h1>Utilitats</h1>
@@ -28,7 +28,33 @@
                     </p>
                 </div>
                 <div class="card-action">
-                    <a id="resultatIMC" href="">Resultat: </a>
+
+                    <table class="white-text bordered">
+                        <tr>
+                            <th>IMC</th>
+                        </tr>
+                        <tr>
+                            <td id="imc1">Infrapeso (Delgadez Severa)</td>
+                        </tr>
+                        <tr>
+                            <td id="imc2">Infrapeso (Delgadez moderada)</td>
+                        </tr>
+                        <tr>
+                            <td id="imc3"> Infrapeso (delgadez aceptable)</td>
+                        </tr>
+                        <tr>
+                            <td id="imc4">Peso normal</td>
+                        </tr>
+                        <tr>
+                            <td id="imc5"> Obeso (Tipo I)</td>
+                        </tr>
+                        <tr>
+                            <td id="imc6">Obeso (Tipo II)</td>
+                        </tr>
+                        <tr>
+                            <td id="imc7">Obeso (Tipo III)</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
@@ -57,29 +83,69 @@
                     </p>
                 </div>
                 <div class="card-action">
-                    <a id="resultatCategoria" href="">Resultat: </a>
+                    <table class="white-text bordered">
+                        <tr>
+                            <th>Categoria</th>
+                        </tr>
+                        <tr>
+                            <td id="cat1">Cadete</td>
+                        </tr>
+                        <tr>
+                            <td id="cat2">Juvenil</td>
+                        </tr>
+                        <tr>
+                            <td id="cat3">Sub 23</td>
+                        </tr>
+                        <tr>
+                            <td id="cat4">Elite</td>
+                        </tr>
+                        <tr>
+                            <td id="cat5">Master</td>
+                        </tr>
+
+                    </table>
                 </div>
             </div>
         </div>
     </div>
     <h2>Horari Associacio</h2>
     <div class="row">
-        <div class="col s12 m6">
+        <div class="col s12">
             <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
                     <span class="card-title">Horari Dilluns a Divendres</span>
-                    <p>
-                        Horari
+                    <p >
+                        <table id="horari1" class="bordered">
+                            <tr>
+                                <th>Hora</th>
+                                <th>Dilluns</th>
+                                <th>Dimarts</th>
+                                <th>Dimecres</th>
+                                <th>Dijous</th>
+                                <th>Divendres</th>
+                            </tr>
+                        </table>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="col s12 m6">
+        <div class="col s12">
             <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
                     <span class="card-title">Horari Dilluns a Diumenge</span>
                     <p>
-                        Horari
+                        <table id="horari2" class="bordered">
+                            <tr>
+                                <th>Hora</th>
+                                <th>Dilluns</th>
+                                <th>Dimarts</th>
+                                <th>Dimecres</th>
+                                <th>Dijous</th>
+                                <th>Divendres</th>
+                                <th>Disapte</th>
+                                <th>Diumenge</th>
+                            </tr>
+                        </table>
                     </p>
                 </div>
             </div>
