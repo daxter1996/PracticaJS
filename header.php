@@ -5,6 +5,7 @@
         <ul id="nav-mobile" class="left">
             <li><a href="index.php"<strong>Home</strong></a></li>
             <li><a href="utilitats.php">Utilitats</a></li>
+            <li><a href="joc.php">Joc</a></li>
         </ul>
     </div>
 </nav>
