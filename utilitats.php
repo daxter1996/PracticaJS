@@ -12,10 +12,15 @@
 <header>
     <?php include_once "header.php"; ?>
 </header>
-<body onload="horari1(2,9,17,'horari1');horari2(1,14,22,'horari2')" >
+<body onload="horari1(2,9,17,'horari1');horari2(1,14,22,'horari2');" >
 <br/>
 <div class="container">
     <h1>Utilitats</h1>
+        <div id="general" class="center white-text">
+            <div id="dalt"></div>
+            <div id="enmig"></div>
+            <div id="baix"></div>
+        </div>
     <div class="row">
         <div class="col s12">
             <div class="card blue-grey darken-1">

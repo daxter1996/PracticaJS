@@ -3,6 +3,36 @@
  * Copyright 2014-2015 Materialize
  * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
  */
+
+#general{
+  margin:10px;
+  height: 90px;
+  width: 95px;
+  background: #00acc1;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#dalt,#baix{
+  border: 2px solid black;
+  font-size: 19px;
+  font-weight: 500;
+  height: 30%;
+  background: #00C853;
+}
+
+#enmig{
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  font-size: 40px;
+  font-weight: 500;
+  height: 60%;
+  background: #0D47A1;
+}
+
+
 .materialize-red {
   background-color: #e51c23 !important;
 }

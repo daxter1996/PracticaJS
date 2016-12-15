@@ -2,6 +2,15 @@
  * Created by jesus on 28/11/2016.
  */
 
+var dia = new Date();
+var mes = new Array ("Enero", "Febrero", "Marzo","Abril","Mayo", "Junio",
+    "Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
+
+document.getElementById("dalt").innerHTML = dia.getFullYear();
+document.getElementById("enmig").innerHTML = dia.getDate();
+document.getElementById("baix").innerHTML = mes[dia.getMonth()];
+
+
 
 function calculaIMC() {
     var altura = document.getElementById("altura").value;
