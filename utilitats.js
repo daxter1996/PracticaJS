@@ -105,6 +105,47 @@ function horari2(espaiHores, horaInici, horaFinal, ID){
     }
 }
 
+function passwd(pass) {
+    var caracters = (pass.length >= 8 && pass.length <= 16);
+    var majuscola = false;
+    var minuscola = false;
+    var nombre = false;
+    var caractersEspecials = new Array("-","_","@","#","$","%","&");
+    var especials = false;
+    for(var i=0;i < pass.length;i++){
+       if(pass.charAt(i) == pass.toUpperCase().charAt(i)){
+            majuscola = true;
+            break;
+        }
+    }
+    for(var i=0;i < pass.length;i++){
+        if(pass.charAt(i) == pass.toLowerCase().charAt(i)){
+            minuscola = true;
+            break;
+        }
+    }
+    for(var i=0;i < pass.length;i++){
+        if(pass.charAt(i) >= 0 && pass.charAt(i) <= 9){
+            nombre = true;
+            break;
+        }
+    }
+    for(var i=0;i < pass.length;i++){
+        for(var j=0;j < caractersEspecials.length;j++){
+            if(pass.charAt(i) == caractersEspecials[j]){
+                especials = true;
+                break;
+            }
+        }
+    }
+
+    document.getElementById("resultatPass").innerHTML = "Longitut entre 8 i 16 caracters: " + caracters;
+    document.getElementById("resultatPass").innerHTML += "<br/>Conte minuscoles: " + minuscola;
+    document.getElementById("resultatPass").innerHTML += "<br/>Conte majuscoles: " + majuscola;
+    document.getElementById("resultatPass").innerHTML += "<br/>Conte nombres: " + nombre;
+    document.getElementById("resultatPass").innerHTML += "<br/>Conte Caracters especials: " + especials;
+}
+
 
 
 

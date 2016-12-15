@@ -12,7 +12,7 @@
 <header>
     <?php include_once "header.php"; ?>
 </header>
-<body>
+<body onload="var timer=setTimeout(function() {Materialize.toast('I am a toast', 4000);},10000);">
 <br/>
 <div class="container">
     <h1>Qui som?</h1>

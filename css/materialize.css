@@ -13,11 +13,14 @@
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  position: absolute;
+  margin-top: -60px;
+  margin-left: 0px;
 }
 
 #dalt,#baix{
   border: 2px solid black;
-  font-size: 19px;
+  font-size: 15px;
   font-weight: 500;
   height: 30%;
   background: #00C853;
@@ -26,7 +29,7 @@
 #enmig{
   border-left: 2px solid black;
   border-right: 2px solid black;
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 500;
   height: 60%;
   background: #0D47A1;

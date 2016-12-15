@@ -16,12 +16,22 @@
 <br/>
 <div class="container">
     <h1>Utilitats</h1>
-        <div id="general" class="center white-text">
-            <div id="dalt"></div>
-            <div id="enmig"></div>
-            <div id="baix"></div>
-        </div>
+
     <div class="row">
+        <div class="col s12">
+            <div class="card blue-grey darken-1">
+                <div class="card-content white-text">
+                    <span class="card-title">Comprova si la contrasenya es segura</span>
+                    <p>
+                        <input placeholder="Contrasenya" id="pass" type="text" class="validate">
+                        <a onclick="passwd(document.getElementById('pass').value)" class="waves-effect waves-light btn blue-grey darken-2">Comprova</a>
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a id="resultatPass">Resultat: </a>
+                </div>
+            </div>
+        </div>
         <div class="col s12">
             <div class="card blue-grey darken-1">
                 <div class="card-content white-text">
@@ -157,6 +167,7 @@
         </div>
     </div>
 </div>
+
 
 <!--Import jQuery before materialize.js-->
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
